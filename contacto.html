@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hecho Con Amor LV</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/09022fd9cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- LOGO CON LINK -->
+        <a href="./index.html"><img src="./imagenes/logo.png" alt="" class="logo"></a>
+        <!-- BARRA DE NAVEGACION -->
+        <input type="checkbox" id="open-menu" class="nav-checkbox">
+        <label for="open-menu" role="button" class="open-menu">&#8801;</label>
+
+        <nav class="header-nav">
+            <a href="./index.html" class="header_links">INICIO</a>
+            <a href="./productos.html" class="header_links">PRODUCTOS</a>
+            <a href="./mayorista.html" class="header_links">MAYORISTA</a>
+            <a href="./contacto.html" class="header_links">CONTACTO</a>
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <div class="contenedor-formulario">
+            <h2 class="formulario-titulo">Contacto</h2>
+            <form class="formulario" action="#" method="post" onsubmit=" ">
+                <div class="formulario-elemento">
+                    
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="formulario-elemento">
+                    
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
+                <div class="formulario-elemento">
+                    
+                    <input type="email" id="email" name="email" placeholder="E-Mail" required>
+                </div>
+                <div class="formulario-elemento">
+                    
+                    <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required>
+                </div>
+                <div class="formulario-elemento">
+                    
+                    <textarea id="consulta" name="consulta" placeholder="Escriba su consulta..." rows="4" required style="flex-basis: 65%;"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            
+        </div>
+    </main>
+
+    <footer>
+        <!-- FOOTER -->
+        <section class="section_footer section-1">
+            <i id="icono-location" class="fa-solid fa-location-dot fa-2xl"></i>
+            <a target="_blank" href="https://maps.app.goo.gl/YRdnrSHXUzZ7fTR99"><p>Belgrano 44, Las Varillas, Cordoba</p></a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3388.3502894743638!2d-62.71948462484664!3d-31.86989067405585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cb646ce82e6da1%3A0x2d3e50cee2fd3c66!2sManuel%20Belgrano%2044%2C%20X5941%20Las%20Varillas%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1723291243923!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="section_footer section-2">
+            <h4 class="redes">Horario de Atención</h4>
+            <p>Lunes a Viernes: 9:00 a 19:00</p>
+            <p>Sabado: 9:00 a 13:00</p>
+            <p>Domingo: Cerrado</p>
+
+            <h4 class="redes">Nuestras Redes</h4>
+            <a href="https://wa.me/543564307681" target="_blank"><i id="wpp" class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://www.instagram.com/hechoconamorlv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i id="insta" class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100063012049979&locale=es_LA"><i id="facebook" class="fa-brands fa-square-facebook"></i></a>
+        </section>
+        <section class="section_footer section-3">
+            <h4 class="redes">Medios de Pago</h4>
+            <ul>
+                <li>
+                    <i class="fab fa-cc-visa"></i> Visa
+                </li>
+                <li>
+                    <i class="fab fa-cc-mastercard"></i> Mastercard
+                </li>
+                <li>
+                    <i class="fa-solid fa-money-bill-transfer"></i> Transferencia
+                </li>
+                <li>
+                    <i class="fa-solid fa-money-bill-1-wave"></i> Efectivo
+                </li>
+                <li>
+                    <i class="fab fa-bitcoin"></i> Bitcoin
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>
