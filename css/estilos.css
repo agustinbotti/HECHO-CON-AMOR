@@ -13,8 +13,8 @@ header{
     flex-wrap: wrap;
     align-items: center;
     box-sizing: border-box;
-    container-type: inline-size;
-    container-name: header;
+    /* container-type: inline-size;
+    container-name: header; */
 }
 
 .logo{
@@ -27,7 +27,7 @@ header nav{
     flex-wrap: wrap;
     gap: 15px;
     padding: 15px;
-    
+    transition: 0.5s
 }
 
 .header_links{
@@ -408,6 +408,7 @@ footer{
         top: 116px; 
         left: 0;
         background-color: rgb(248, 238, 222);
+        
     }
     .open-menu{
         display: block;
@@ -419,7 +420,7 @@ footer{
     .nav-checkbox:checked ~ .header-nav{
         display: flex;
         flex-direction: column;
-        
+
     }
     .open-menu:hover{
         color:#fff;
