@@ -38,40 +38,32 @@
             <h2>SOLICITUD MAYORISTA</h2>
             <form action="" class="formulario">
                 <div class="formulario-elemento">
-                    
                     <input type="text" id="nombre" placeholder="Nombre">
                 </div>
                 <div class="formulario-elemento">
-                    
                     <input type="email" id="correo" placeholder="E-Mail">
                 </div>
                 <div class="formulario-elemento">
-                    
                     <input type="tel" id="telefono" placeholder="Telefono">
                 </div>
                 <div class="formulario-elemento">
-                    
                     <input type="text" id="direccion" placeholder="Direccion">
                 </div>
                 <div class="formulario-elemento">
-                    
                     <input type="text" id="producto" placeholder="Producto">
                 </div>
                 <div class="formulario-elemento">
-                    
                     <input type="number" id="cantidad" min="10" placeholder="Cantidad">
                 </div>
                 <div class="formulario-elemento">
-                    
                     <select name="personalizacion" id="personalizar" class="personalizar" onchange="toggleInput()">
                         <option value="0">Personalizacion?</option>
                         <option value="1">Sin personalizar</option>
                         <option value="2">Personalizar</option>
-
                     </select>
                 </div>
                 <div class="formulario-elemento" id="personalizacion1" >
-                    <input type="text"  placeholder="Describa como desea personalizarlo">
+                    <input type="text" id="personalizacion?"  placeholder="Describa como desea personalizarlo">
                 </div>
                 <div class="formulario-elemento">
                     
@@ -145,6 +137,27 @@
             extraInput.style.display = 'none'; // Ocultar input extra
         }
     }
+
+    function cotizar() {
+        const nombre = document.getElementById('nombre').value
+        const correo = document.getElementById('correo').value
+        const telefono = document.getElementById('telefono').value
+        const direccion = document.getElementById('direccion').value
+        const cantidad = document.getElementById('cantidad').value
+        const personalizacion = document.getElementById('personalizar').value
+
+        if (personalizacion == '2'){
+            const personalizacion1 = document.getElementById('personalizacion?').value
+        }
+
+        const celular = '5493533682640'
+        var url = `https://wa.me/${celular}?text=Nombre:%20${encodename}%0AApellido:%20${encodeapellido}%0AEmail:%20${encodeemail}%0ATelefono:%20${encodetelefono}%0AConsulta:%20${encodeconsulta}`;
+
+        window.open(url, '_blank');
+    }
+
+
+
 </script>
 
 </html>
