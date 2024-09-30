@@ -78,7 +78,7 @@
                 </div>
                 
                 
-                <button type="submit">Cotizar</button>
+                <button type="submit" onclick="cotizar()">Cotizar</button>
                 <br>
                 <p class="descuento">Efectivo o Transferencia 15% Off | Minimo de Compra Precio Mayorista 10 (unidades)</p>
             </form>
@@ -143,18 +143,19 @@
         const correo = document.getElementById('correo').value
         const telefono = document.getElementById('telefono').value
         const direccion = document.getElementById('direccion').value
+        const producto = document.getElementById('producto').value
         const cantidad = document.getElementById('cantidad').value
         const personalizacion = document.getElementById('personalizar').value
-
+        const celular = '5493533682640'
         if (personalizacion == '2'){
             const personalizacion1 = document.getElementById('personalizacion?').value
+            var url = `https://wa.me/${celular}?text=Nombre:%20${nombre}%0AEmail:%20${correo}%0ATelefono:%20${telefono}%0ADireccion:%20${direccion}%0ACantidad:%20${cantidad}%0APersonalizacion:%20${personalizacion1}`;
+            window.open(url, '_blank');
         }
-
-        const celular = '5493533682640'
-        var url = `https://wa.me/${celular}?text=Nombre:%20${encodename}%0AApellido:%20${encodeapellido}%0AEmail:%20${encodeemail}%0ATelefono:%20${encodetelefono}%0AConsulta:%20${encodeconsulta}`;
-
-        window.open(url, '_blank');
-    }
+        else{
+            var url = `https://wa.me/${celular}?text=Nombre:%20${nombre}%0AEmail:%20${correo}%0ATelefono:%20${telefono}%0ADireccion:%20${direccion}%0ACantidad:%20${cantidad}`;
+            window.open(url, '_blank');}
+}
 
 
 
